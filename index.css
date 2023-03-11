@@ -1,0 +1,18 @@
+.container {
+    display: flexbox;
+    max-width: 50%;
+    max-height: 70%;
+}
+.avatar {
+    max-width: 70%;
+}
+.button {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.chat {
+    max-width: 90%;
+    max-height: 50%;
+    border: 1px solid black;
+    padding: 25px;
+}
