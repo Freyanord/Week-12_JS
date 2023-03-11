@@ -19,14 +19,14 @@
         </div>
         <div>
             <label for="link">Введите ссылку <b>Вашего аватара</b></label><br>
-            <input type="url" id="avatar"/>
+            <input type="src" id="avatar"/>
         </div>
         <div>
             <label for="comment"><b>Оставьте комментарий</b></label><br>
             <textarea class="comment-area" cols="50" rows="10"></textarea>
         </div>
         <div>
-            <button class="button" type="submit" id="comment-add" onclick="total()">Отправить</button>
+            <button class="button" type="submit" id="comment-add" onclick="total(), checkSpam()">Отправить</button>
         </div>
         <div >
             <label for="chat"><b>Чат</b></label><br>

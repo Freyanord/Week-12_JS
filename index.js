@@ -3,23 +3,38 @@ const avatar = document.getElementById('avatar');
 const comment = document.querySelector('.comment-area');
 const chat = document.querySelector('.chat');
 
-
 function capitalize(user){
     user.value = user.value.replace(/(^|\s)\S/g,
     function(a) {return a.toUpperCase()});
 }
+
 user.addEventListener('input', function (){
     capitalize(this);
 });
 
-
+button.addEventListener('click', total());
 
 function total (){
-    chat.textContent = document.querySelector('.comment-area').value
-    avatar.value = document.getElementById('avatar').src
+    chat.textContent = document.querySelector('.comment-area').value;
+    avatar.value = document.getElementById('avatar').src;
 }
 
-button.addEventListener('click', total());
+
+
+button.addEventListener('click', checkSpam());
+
+ function checkSpam(){
+    comment.textContent = comment.textContent.replace(/Viagra/g, "***");
+ }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -38,7 +53,6 @@ button.addEventListener('click', total());
     function(a) {return a.toUpperCase()})
 }
 
-//userName.addEventListener
 
 /*function total() {
     
