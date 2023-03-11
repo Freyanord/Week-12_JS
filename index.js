@@ -1,5 +1,5 @@
 const user = document.getElementById('username');
-const avatar = document.querySelector('.avatar');
+const avatar = document.getElementById('avatar');
 const comment = document.querySelector('.comment-area');
 const chat = document.querySelector('.chat');
 
@@ -13,12 +13,13 @@ user.addEventListener('input', function (){
 });
 
 
-button.addEventListener('click', total());
 
 function total (){
     chat.textContent = document.querySelector('.comment-area').value
-    avatar.value = document.querySelector('.avatar').src
+    avatar.value = document.getElementById('avatar').src
 }
+
+button.addEventListener('click', total());
 
 
 
