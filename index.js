@@ -12,19 +12,19 @@ user.addEventListener('input', function (){
     capitalize(this);
 });
 
-button.addEventListener('click', total());
-
-function total (){
-    chat.textContent = document.querySelector('.comment-area').value;
-    avatar.value = document.getElementById('avatar').src;
-}
-
-
-
+button.addEventListener('click', total);
 button.addEventListener('click', checkSpam());
 
- function checkSpam(){
-    comment.textContent = comment.textContent.replace(/Viagra/g, "***");
+function total () {
+    chat.textContent = document.querySelector('.comment-area').value;
+}
+
+ function checkSpam() {
+    chat.textContent = chat.textContent.replace(/Viagra/g, "***");
+ }
+
+ function showAvatar () {
+    avatar.value = document.getElementById('avatar').src;
  }
 
 
