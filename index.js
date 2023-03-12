@@ -13,7 +13,8 @@ user.addEventListener('input', function (){
 });
 
 button.addEventListener('click', total);
-button.addEventListener('click', checkSpam());
+button.addEventListener('click', checkSpam);
+button.addEventListener('click', showAvatar);
 
 function total () {
     chat.textContent = document.querySelector('.comment-area').value;
@@ -24,7 +25,7 @@ function total () {
  }
 
  function showAvatar () {
-    avatar.value = document.getElementById('avatar').src;
+    chat.textContent = document.getElementById('avatar').value;
  }
 
 
