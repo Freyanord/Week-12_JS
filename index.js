@@ -1,5 +1,5 @@
 const user = document.getElementById('username');
-const avatar = document.getElementById('avatar');
+const avatar = document.getElementById('url-input');
 const comment = document.querySelector('.comment-area');
 const chat = document.querySelector('.chat');
 
@@ -14,7 +14,8 @@ user.addEventListener('input', function (){
 
 button.addEventListener('click', total);
 button.addEventListener('click', checkSpam);
-button.addEventListener('click', showAvatar);
+button.addEventListener('click', addUser);
+//button.addEventListener('click', showAvatar);
 
 function total () {
     chat.textContent = document.querySelector('.comment-area').value;
@@ -23,10 +24,14 @@ function total () {
  function checkSpam() {
     chat.textContent = chat.textContent.replace(/Viagra/g, "***");
  }
+function addUser () {
+    chat.textContent = document.getElementById('username').value;
+}
 
- function showAvatar () {
-    chat.textContent = document.getElementById('avatar').value;
- }
+
+ /*function showAvatar () {
+    chat.textContent = document.getElementById('url-input').value;
+ }*/
 
 
 

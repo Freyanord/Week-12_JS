@@ -19,14 +19,15 @@
         </div>
         <div>
             <label for="link">Введите ссылку <b>Вашего аватара</b></label><br>
-            <input type="text" id="avatar"/>
+            <input type="text" id="url-input"/>
+            <!--<img src="" alt="" id="url-image">-->
         </div>
         <div>
             <label for="comment"><b>Оставьте комментарий</b></label><br>
             <textarea class="comment-area" cols="50" rows="10"></textarea>
         </div>
         <div>
-            <button class="button" type="submit" id="comment-add" onclick="total(), checkSpam(), showAvatar ()">Отправить</button>
+            <button class="button" type="submit" id="comment-add" onclick="total(), checkSpam(), addUser()">Отправить</button>
         </div>
         <div >
             <label for="chat"><b>Чат</b></label><br>
