@@ -3,17 +3,29 @@ const avatar = document.getElementById('url-input');
 const comment = document.querySelector('.comment-area');
 const chat = document.querySelector('.chat');
 
+user.addEventListener('input', function (){
+    capitalize(this);
+});
+
 function capitalize(user){
     user.value = user.value.replace(/(^|\s)\S/g,
     function(a) {return a.toUpperCase()});
 }
 
-user.addEventListener('input', function (){
-    capitalize(this);
+button.addEventListener ('click', () => {
+    chat.textContent = chat.textContent.replace(/Viagra/g, "***");
+    
+    chat.textContent = (user.value + ':' comment.value);
 });
 
-button.addEventListener('click', total);
-button.addEventListener('click', checkSpam);
+
+/*function checkSpam() {
+    chat.textContent = chat.textContent.replace(/Viagra/g, "***");
+ }
+
+//button.addEventListener('click', total);
+
+/*button.addEventListener('click', checkSpam);
 button.addEventListener('click', addUser);
 //button.addEventListener('click', showAvatar);
 
@@ -21,9 +33,7 @@ function total () {
     chat.textContent = document.querySelector('.comment-area').value;
 }
 
- function checkSpam() {
-    chat.textContent = chat.textContent.replace(/Viagra/g, "***");
- }
+ 
 function addUser () {
     chat.textContent = document.getElementById('username').value;
 }
@@ -32,21 +42,6 @@ function addUser () {
  /*function showAvatar () {
     chat.textContent = document.getElementById('url-input').value;
  }*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //document.querySelector('.chat').addEventListener
 
