@@ -11,8 +11,10 @@
     margin-bottom: 15px;
 }
 .chat {
-    max-width: 50%;
-    max-height: 50%;
     border: 1px solid black;
     padding: 25px;
+}
+.userimage {
+    max-height: 50px;
+    max-height: 50px;
 }

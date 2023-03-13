@@ -2,8 +2,10 @@ const user = document.getElementById('username');
 const avatar = document.getElementById('url-input');
 const comment = document.querySelector('.comment-area');
 const chat = document.querySelector('.chat');
+const button = document.querySelector('.button');
+//https://pixelbox.ru/wp-content/uploads/2021/09/avatar-boys-vk-46.jpg
 
-user.addEventListener('input', function (){
+user.addEventListener('input', function () {
     capitalize(this);
 });
 
@@ -12,42 +14,62 @@ function capitalize(user){
     function(a) {return a.toUpperCase()});
 }
 
-button.addEventListener ('click', () => {
-    chat.textContent = chat.textContent.replace(/Viagra/g, "***");
-    
-    chat.textContent = (user.value + ':' comment.value);
-});
-
-
-/*function checkSpam() {
+function checkSpam() {
     chat.textContent = chat.textContent.replace(/Viagra/g, "***");
  }
 
+ function addNewMessage () {
+    console.log(comment.value);
+    chat.innerHTML = `<div class="box">
+    <img src="${avatar.value}" alt="лицо" class="userimage">
+    <p class="username">${user.value}</p>
+    <p class="message">${comment.value}</p>
+</div>`};
+ 
+button.addEventListener('click', addNewMessage);
 //button.addEventListener('click', total);
-
-/*button.addEventListener('click', checkSpam);
-button.addEventListener('click', addUser);
+//button.addEventListener('click', checkSpam);
+//button.addEventListener('click', addUser);
 //button.addEventListener('click', showAvatar);
 
-function total () {
+/*function total () {
     chat.textContent = document.querySelector('.comment-area').value;
 }
 
- 
 function addUser () {
     chat.textContent = document.getElementById('username').value;
-}
-
+}*/
 
  /*function showAvatar () {
-    chat.textContent = document.getElementById('url-input').value;
+    chat.textContent = avatar.value;
  }*/
 
 //document.querySelector('.chat').addEventListener
 
-/*chat.addEventListener('click', () => {
-    document.getElementById('#comment-area').textContent
-});*/
+// chat.addEventListener('click', () => {
+//     document.getElementById('#comment-area').textContent
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*function capitalize(userName) {
     return userName.replace(/(^|\s)\S/g,
@@ -67,4 +89,3 @@ function addUser () {
     let commentBody = document.getElementById('comment');
 }*/
 
-//document.getElementById('comment-add').onclick = myClick
