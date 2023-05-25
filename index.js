@@ -16,14 +16,14 @@ function capitalize(user){
 };
 
 function checkSpam() {
-    chat.innerHTML = comment.value.replace(/Viagra/g, "***");
+    chat.innerHTML = comment.value.replace(/Viagra/i, "***");
 };
 
 function addNewMessage () {
     chat.innerHTML = `<div class="container">
     <img src="${avatar.value}" alt="лицо" class="userimage">
     <p class="username">${user.value}</p>
-    <p class="message" >${comment.value.replace(/Viagra/g, "***")}</p>
+    <p class="message" >${comment.value.replace(/Viagra/i, "***")}</p>
 </div>`};
 
 button.addEventListener('click', addNewMessage);
