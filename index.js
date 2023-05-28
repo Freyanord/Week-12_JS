@@ -19,10 +19,6 @@ function checkSpam() {
     chat.innerHTML = comment.value.replace(/(xxx|viagra)/gi,"***");
 };
 
-// function checkSpam1() {
-//     chat.innerHTML = comment.value.replace(/xxx/i, "***");
-// };
-
 function addNewMessage () {
     chat.innerHTML = `<div class="container">
     <img src="${avatar.value}" alt="лицо" class="userimage">
@@ -33,5 +29,5 @@ function addNewMessage () {
 button.addEventListener('click', addNewMessage);
 
 
-/* <p class="message" >${comment.value.replace(/xxx/i, "***")}</p> */
+
 
